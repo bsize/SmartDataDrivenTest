@@ -1,0 +1,23 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="TestSteam"  >
+    <!-- suite name="Suite Name" -->
+    <test name="Test 1. OS - Mac" >
+        <parameter name="email" value="your_email" />
+        <parameter name="password" value="your_password" />
+        <parameter name="os" value="Mac" />
+        <parameter name="productName" value="Password Manager" />
+        <classes>
+            <class name="SmartDataDrivenTest" />
+        </classes>
+    </test>
+    <test name="Test 2. OS - Android" >
+        <parameter name="email" value="your_email" />
+        <parameter name="password" value="your_password" />
+        <parameter name="os" value="Android" />
+        <parameter name="productName" value="Safe Kids" />
+        <classes>
+            <class name="SmartDataDrivenTest" />
+        </classes>
+    </test>
+</suite>
